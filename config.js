@@ -4,7 +4,7 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 //═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER.split(",")
-global.mongodb = process.env.MONGODB_URI || "Enter-MongoURI-HERE"
+global.mongodb = process.env.MONGODB_URI || "mongodb+srv://sufyanji1:<password>@cluster0.drqgrtn.mongodb.net/?retryWrites=true&w=majority"
 global.port= process.env.PORT || 5000
 global.email = 'sam@sec.live'
 global.github = 'https://github.com/prabathLK/PRABATH-MD'
@@ -37,11 +37,11 @@ module.exports = {
   levelupmessage: process.env.LEVEL_UP_MESSAGE || 'false',
   antilink: process.env.ANTILINK_VALUES || 'chat.whatsapp.com',
   antilinkaction: process.env.ANTILINK_ACTION || 'remove',
-  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || 'put your herokuapp name',
-  HEROKU_API_KEY: process.env.HEROKU_API_KEY || 'put your heroku_api_key',
+  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || 'cryptic-depths-59366',
+  HEROKU_API_KEY: process.env.HEROKU_API_KEY || '0cdc3920-5284-4fbc-9e6f-07b133ae1f18',
   BRANCH: 'main',
   ALIVE_MESSAGE: process.env.ALIVE_MESSAGE || '',
-  OPENAI_API_KEY: process.env.OPENAI_API_KEY || 'put-key-here',
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || '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',
   VERSION: process.env.VERSION === undefined ? 'v.5.0.0' : process.env.VERSION,
   LANG: process.env.THEME|| 'sufyan-jan',
   WORKTYPE: process.env.WORK_TYPE === undefined ? 'public' : process.env.WORK_TYPE
